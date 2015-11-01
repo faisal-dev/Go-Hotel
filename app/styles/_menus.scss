@@ -1,0 +1,31 @@
+.menu-grp {
+  margin-top: .8rem;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.menu-item-extend {
+  background-color: $white;
+  box-shadow: 0 1px 2px 0 rgba($black, .2);
+  position: absolute;
+  top: 5.4rem;
+
+  &:last-child {
+    right: 0;
+  }
+
+  li > a {
+    color: $menu-item;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 212px;
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid rgba($black, .1);
+  }
+}

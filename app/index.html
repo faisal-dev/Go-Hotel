@@ -52,15 +52,18 @@
               <a class="navbar-brand" href="#">Go Hotel</a>
             </div> <!--  /.navbar-brand -->
 
-            <div class="menu-grp">
+            <div class="booking-form hidden-sm">
+              <form action="index.html"></form>
+            </div> <!-- /.booking-form -->
+
+            <div class="menu-grp pull-right">
               <div class="menu-item" id="menu-booking">
                 <button class="btn btn-menu" type="button">
                   <span class="glyphicon glyphicon-calendar"></span>
-                  booking
                 </button>
-                <div class="booking-form">
+                <div class="menu-item-extend">
                   <form action="index.html">
-                    
+
                   </form>
                 </div>
               </div> <!--  /#menu-booking -->
@@ -68,36 +71,28 @@
               <div class="menu-item" id="menu-socials">
                 <button class="btn btn-menu" type="button">
                   <span class="glyphicon glyphicon-retweet"></span>
-                  Socials
                 </button>
-                <ul class="lists">
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Instargram</a></li>
-                </ul>
               </div> <!-- /#menu-socials -->
 
               <div class="menu-item" id="menu-login">
                 <button class="btn btn-menu" type="button">
                   <span class="glyphicon glyphicon-log-in"></span>
-                  Login
                 </button>
-                <div class="login-form">
+                <div class="menu-item-extend">
                   <form action="index.html">
-                    
+
                   </form>
                 </div>
               </div> <!-- /#menu-login-form -->
 
               <div class="menu-item" id="menu-main">
-                <button class="btn-menu navbar-toggle" type="button" data-toggle="collapse" data-target="#page-lists" aria-expanded="false" aria-controls="page-lists">
+                <button class="btn btn-menu" type="button" data-toggle="collapse" data-target="#page-lists" aria-expanded="false" aria-controls="page-lists">
                   <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  MENU
+                  <span class="glyphicon glyphicon-menu-hamburger"></span>
+                  <span class="hidden-xs">MENU</span>
                 </button>
-                <div id="page-lists" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
+                <div class="menu-item-extend" id="page-lists">
+                  <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="../rooms">Rooms</a></li>
                     <li><a href="../staff">Our staff</a></li>
