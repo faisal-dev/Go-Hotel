@@ -1,0 +1,26 @@
+.form-group {
+  position: relative;
+
+  .glyphicon {
+    color: $grey;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+}
+
+.booking-form {
+  margin-top: .5rem;
+
+  input {
+    margin-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &:focus {
+      border-color: rgba($black, .4);
+      box-shadow: inset 0 1px 1px rgba($black, .075),
+                  0 0 5px rgba($black, .2);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// Custom datepicker style
+.ui-widget-content {
+  border: 0;
+  box-shadow: 0 1px 2px 0 rgba($black, 0.2);
+  margin-top: 1.5rem;
+}
+
+.ui-datepicker-header {
+  background: darken($white, 5%);
+  border: 0;
+
+  .ui-state-hover {
+    background: rgba($white, 0);
+    border: 0;
+  }
+
+  .ui-datepicker-next-hover {
+    right: 2px;
+    top: 2px;
+  }
+
+  .ui-datepicker-prev-hover {
+    left: 2px;
+    top: 2px;
+  }
+}
+
+.ui-datepicker-calendar {
+  color: $grey;
+
+  .ui-state-default {
+    background: $white;
+    border: 0;
+  }
+
+  .ui-state-hover {
+    background: rgba($black, 0.05);
+  }
+}
+

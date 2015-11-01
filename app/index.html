@@ -15,6 +15,9 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.theme.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -25,7 +28,7 @@
     <!-- endbuild -->
     
   </head>
-  <body>
+  <body class="go-theme" >
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -52,12 +55,29 @@
               <a class="navbar-brand" href="#">Go Hotel</a>
             </div> <!--  /.navbar-brand -->
 
-            <div class="booking-form hidden-sm">
-              <form action="index.html"></form>
+            <div class="booking-form visible-lg pull-left">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="sr-only" for="#search-box">Search</label>
+                  <input class="form-control" id="search-box" type="text" placeholder="Find here">
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="#arrival">arrival</label>
+                  <input class="form-control" id="arrival" type="text" placeholder="arrival">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="#departure">departure</label>
+                  <input class="form-control" id="departure" type="text" placeholder="departure">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+              </form>
             </div> <!-- /.booking-form -->
 
             <div class="menu-grp pull-right">
-              <div class="menu-item" id="menu-booking">
+              <div class="menu-item hidden-lg" id="menu-booking">
                 <button class="btn btn-menu" type="button">
                   <span class="glyphicon glyphicon-calendar"></span>
                 </button>
@@ -91,7 +111,7 @@
                   <span class="glyphicon glyphicon-menu-hamburger"></span>
                   <span class="hidden-xs">MENU</span>
                 </button>
-                <div class="menu-item-extend" id="page-lists">
+                <div class="menu-item-extend collapse" id="page-lists">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="../rooms">Rooms</a></li>
@@ -114,6 +134,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
