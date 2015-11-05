@@ -9,7 +9,7 @@
   .glyphicon {
     color: $grey;
     position: absolute;
-    right: 30px;
+    right: 12px;
     top: 15px;
   }
 }
@@ -50,6 +50,7 @@
     list-style: none;
     padding-left: 0;
     position: absolute;
+    width: 100%;
   }
 
   .active {
@@ -63,7 +64,6 @@
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-top: 1rem;
-    width: 180px;
     cursor: pointer;
 
     &:hover {

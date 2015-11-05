@@ -52,7 +52,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Go Hotel</a>
+              <a class="navbar-brand" href="#">
+                <span class="icon icon-brand icon-md"></span>
+                <span class="text-logo">Alberton Hotel</span>
+              </a>
             </div> <!--  /.navbar-brand -->
 
             <div class="menu-grp pull-right">
@@ -68,9 +71,31 @@
               </div> <!--  /#menu-booking -->
 
               <div class="menu-item" id="menu-socials">
-                <button class="btn btn-menu" type="button">
+                <button class="btn btn-menu" type="button" data-toggle="collapse" data-target="#socials-lists" aria-expanded="false" aria-controls="socials-lists">
                   <span class="glyphicon glyphicon-retweet"></span>
                 </button>
+                <div class="menu-item-extend collapse" id="socials-lists">
+                  <ul class="nav menu-li-sm">
+                    <li class="active">
+                      <a href="#">
+                        <span class="icon icon-fb icon-sm"></span>
+                        <span class="sr-only">Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-ig icon-sm"></span>
+                        <span class="sr-only">Instargram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-youtube icon-sm"></span>
+                        <span class="sr-only">Youtube</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div> <!-- /#menu-socials -->
 
               <div class="menu-item" id="menu-login">
@@ -91,7 +116,7 @@
                   <span class="hidden-xs">MENU</span>
                 </button>
                 <div class="menu-item-extend collapse" id="page-lists">
-                  <ul class="nav">
+                  <ul class="nav menu-li-lg">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="../rooms">Rooms</a></li>
                     <li><a href="../staff">Our staff</a></li>

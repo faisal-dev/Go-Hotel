@@ -1,0 +1,32 @@
+.icon {
+  @include  clearfix();
+  background-size: cover;
+  content: '';
+  display: block;
+}
+
+.icon-sm {
+  @include size(20px, 20px);
+}
+
+.icon-md {
+  @include size(40px, 40px);
+}
+
+.icon-fb {
+  background-image: url(../images/svg/facebook29.svg);
+}
+
+.icon-ig {
+  background-image: url(../images/svg/instagram12.svg);
+}
+
+.icon-youtube {
+  background-image: url(../images/svg/logotype46.svg);
+}
+
+.icon-brand {
+  background-image: url(../images/brand-logo.png);
+  position: absolute;
+  top: 15px;
+}

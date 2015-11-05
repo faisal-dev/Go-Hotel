@@ -22,10 +22,21 @@
     color: $menu-item;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    width: 212px;
   }
 
   li:not(:last-child) {
     border-bottom: 1px solid rgba($black, .1);
+  }
+}
+
+.menu-li-lg {
+  li > a {
+    width: 205px;;
+  }
+}
+
+.menu-li-sm {
+  li > a {
+    width: 50px;;
   }
 }

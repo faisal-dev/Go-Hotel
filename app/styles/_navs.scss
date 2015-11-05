@@ -7,3 +7,16 @@
 .navbar-header {
   float: left;
 }
+
+.navbar-brand {
+  margin-left: 0 !important;
+
+  .text-logo {
+    display: none;
+
+    @media (min-width: 1635px) {
+      display: inline;
+      margin-left: 5rem;
+    }
+  }
+}
