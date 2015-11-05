@@ -84,6 +84,13 @@ $(document).ready(function() {
   $( "#arrival" ).datepicker();
   $( "#departure" ).datepicker();
 
+  // Owlcarousel init
+  $(".owl-carousel").owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:1,
+    smartSpeed:450
+  });
 });
 
 })(jQuery);
