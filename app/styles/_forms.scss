@@ -1,5 +1,10 @@
 .form-group {
   position: relative;
+  width: 17%;
+
+  .form-control {
+    width: 100%;
+  }
 
   .glyphicon {
     color: $grey;
@@ -50,6 +55,7 @@
   .active {
     ul {
       display: block;
+      margin-top: 1.6rem;
     }
   }
 
@@ -58,5 +64,10 @@
     padding-left: 2rem;
     padding-top: 1rem;
     width: 180px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($black, .05);
+    }
   }
 }

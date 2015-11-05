@@ -75,33 +75,6 @@ $(document).ready(function() {
 
   };
 
-  /* -------------------------------------------------------------------------
-    MEDIA QUERY BREAKPOINT
-  ------------------------------------------------------------------------- */
-  // var uouMediaQueryBreakpoint = function() {
-
-  //   if ($('#media-query-breakpoint').length < 1) {
-  //     $('body').append('<var id="media-query-breakpoint"><span></span></var>');
-  //   }
-  //   var value = $('#media-query-breakpoint').css('content');
-  //   if (typeof value !== 'undefined') {
-  //     value = value.replace("\"", "").replace("\"", "").replace("\'", "").replace("\'", "");
-  //     if (isNaN(parseInt(value, 10))) {
-  //       $('#media-query-breakpoint span').each(function() {
-  //         value = window.getComputedStyle(this, ':before').content;
-  //       });
-  //       value = value.replace("\"", "").replace("\"", "").replace("\'", "").replace("\'", "");
-  //     }
-  //     if (isNaN(parseInt(value, 10))) {
-  //       value = 1199;
-  //     }
-  //   } else {
-  //     value = 1199;
-  //   }
-  //   return value;
-
-  // };
-
   // SELECT BOX
   $( '.select-box' ).each(function(){
     $(this).uouSelectBox();
