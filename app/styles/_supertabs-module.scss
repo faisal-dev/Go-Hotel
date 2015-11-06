@@ -1,0 +1,48 @@
+.supertabs-module {
+  border: 1px solid rgba($black, .1);
+
+  >.menu {
+    @media(min-width: 768px) {
+      border-right: 1px solid rgba($black, .1);
+    }
+  }
+
+  >.menu >.list {
+    color: $black;
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  >.menu > .list {
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  >.display {
+    padding: 3rem;
+  }
+}
+
+.supertabs-module >.menu >.list {
+
+  &.active {
+    background-color: rgba($grey, .1);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($grey, .1);
+  }
+
+  >.title {
+    margin-top: 0;
+  }
+
+  >.meta {
+    color: $grey;
+  }
+}

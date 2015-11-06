@@ -1,0 +1,12 @@
+.header-box {
+  position: relative;
+
+  >.title {
+    font-weight: 800;
+  }
+
+  >.meta {
+    color: $grey;
+    font-weight: 500;
+  }
+}

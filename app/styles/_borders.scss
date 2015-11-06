@@ -1,9 +1,13 @@
-.bd-star {
-  position: relative;
-
+.bd-underline {
   &:after {
     display: block;
-    content: '★★★★★';
+  }
+
+  &.-lg:after {
     font-size: 2.5em;
+  }
+
+  &.-star:after {
+    content: '★★★★★';
   }
 }
