@@ -12,11 +12,16 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // LAYOUTS
 @import 'navs';
+@import 'about';
 
 // MODULES
 @import 'banner';
+@import 'blocks';
+@import 'borders';
 @import 'buttons';
 @import 'datepicker';
 @import 'forms';
+@import 'features';
 @import 'icons';
 @import 'menus';
+@import 'thumb-image';

@@ -76,20 +76,26 @@ $(document).ready(function() {
   };
 
   // SELECT BOX
-  $( '.select-box' ).each(function(){
+  $('.select-box').each(function(){
     $(this).uouSelectBox();
   });
 
   // Date picker init
-  $( "#arrival" ).datepicker();
-  $( "#departure" ).datepicker();
+  $('.calendar').each(function() {
+    var
+      input = $(this).find('input'),
+      icon = $(this).find('.glyphicon');
+
+    input.datepicker();
+  });
 
   // Owlcarousel init
-  $(".owl-carousel").owlCarousel({
-    animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
+  $('.owl-carousel').owlCarousel({
     items:1,
-    smartSpeed:450
+    autoplay: true,
+    smartSpeed:450,
+    nav: true,
+    navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
   });
 });
 

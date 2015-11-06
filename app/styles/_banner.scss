@@ -1,3 +1,16 @@
 .banner {
   margin-top: 7rem;
+
+  .owl-prev,
+  .owl-next {
+    color: $white;
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+  }
+
+  .owl-next {
+    right: 0;
+  }
 }

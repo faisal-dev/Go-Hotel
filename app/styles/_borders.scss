@@ -1,0 +1,9 @@
+.bd-star {
+  position: relative;
+
+  &:after {
+    display: block;
+    content: '★★★★★';
+    font-size: 2.5em;
+  }
+}

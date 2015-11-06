@@ -1,0 +1,15 @@
+
+.block {
+  &#{-container} {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+
+  &#{-header} {
+    margin-bottom: 10rem;
+
+    > .title {
+      margin-bottom: 2rem;
+    }
+  }
+}

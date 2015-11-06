@@ -1,0 +1,20 @@
+.thumb-img {
+  position: relative;
+
+  >.overlay {
+    background-color: rgba($overlay-bg, .8);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+    opacity: 0;
+    transition: all .5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
