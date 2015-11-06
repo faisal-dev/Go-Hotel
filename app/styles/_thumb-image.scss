@@ -17,4 +17,11 @@
       opacity: 1;
     }
   }
+
+  >.overlay >.link {
+    margin-left: -6rem;
+    margin-top: -2rem;
+    position: absolute;
+    top: 50%;
+  }
 }

@@ -90,12 +90,18 @@ $(document).ready(function() {
   });
 
   // Owlcarousel init
-  $('.owl-carousel').owlCarousel({
+  $('#owl-banner').owlCarousel({
     items:1,
     autoplay: true,
     smartSpeed:450,
     nav: true,
     navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
+  });
+
+  $('#owl-testimonials').owlCarousel({
+    items:1,
+    autoplay: true,
+    smartSpeed:450,
   });
 });
 
