@@ -14,7 +14,11 @@
 }
 
 .icon-fb {
-  background-image: url(../images/svg/facebook29.svg);
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%; 
+  background-size: cover;
 }
 
 .icon-ig {
@@ -29,4 +33,9 @@
   background-image: url(../images/brand-logo.png);
   position: absolute;
   top: 15px;
+}
+
+.icon-white { 
+  -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
 }

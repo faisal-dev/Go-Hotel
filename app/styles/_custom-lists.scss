@@ -16,8 +16,10 @@
     padding-top: 2rem;
   }
 
-  &.-horizon {
+  &.-horizon > .item {
     display: inline-block;
+    padding-bottom: 0;
+    margin-right: 1.5rem;
   }
 
   &.-invert > .item > a {

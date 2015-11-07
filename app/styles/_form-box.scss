@@ -1,0 +1,16 @@
+.form-box {
+  > .input {
+    border-radius: 4px;
+    height: 42px;
+    border: 1px solid rgba(black, .1);
+    padding-left: 2rem;
+    vertical-align: middle;
+    opacity: .5;
+    transition: all .5s ease;
+  }
+
+  > .input:focus,
+  > .input:active {
+    opacity: 1;
+  }
+}

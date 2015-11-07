@@ -105,7 +105,7 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
     });
 
     $('#owl-client-slider').owlCarousel({
-      margin:20,
+      margin:40,
       autoplay: true,
       smartSpeed:450,
       responsive:{
