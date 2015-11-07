@@ -18,9 +18,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // MODULES
 @import 'banner';
 @import 'blocks';
+@import 'brand-logo';
 @import 'borders';
 @import 'buttons';
 @import 'coverr';
+@import 'custom-lists';
 @import 'datepicker';
 @import 'forms';
 @import 'feature-box';
@@ -30,3 +32,4 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import 'supertabs-module';
 @import 'testimonials';
 @import 'thumb-image';
+@import 'helpers';

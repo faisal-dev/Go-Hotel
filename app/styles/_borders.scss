@@ -1,6 +1,9 @@
 .bd-underline {
   &:after {
     display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -7rem;
   }
 
   &.-lg:after {
