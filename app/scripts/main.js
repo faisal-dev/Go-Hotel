@@ -5,104 +5,121 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 ;(function($) {
   'use strict';
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  /* -------------------------------------------------------------------------
-    SELECT BOX
-  ------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------
+      SELECT BOX
+    ------------------------------------------------------------------------- */
 
-  $.fn.uouSelectBox = function() {
-    console.log('select-box'); // eslint-disable-line no-console
+    $.fn.uouSelectBox = function() {
+      console.log('select-box'); // eslint-disable-line no-console
 
-    var
-      self = $(this),
-      select = self.find('select');
-    self.prepend('<ul class="select-clone custom-list"></ul>');
+      var
+        self = $(this),
+        select = self.find('select');
+      self.prepend('<ul class="select-clone custom-list"></ul>');
 
-    var
-      placeholder = select.data('placeholder') ? select.data('placeholder') : select.find('option:eq(0)').text(),
-      clone = self.find('.select-clone');
-    self.prepend('<input class="form-control value-holder" type="text" disabled="disabled" placeholder="' + placeholder + '"><span class="glyphicon glyphicon-triangle-bottom"></span>');
-    var value_holder = self.find('.value-holder');
+      var
+        placeholder = select.data('placeholder') ? select.data('placeholder') : select.find('option:eq(0)').text(),
+        clone = self.find('.select-clone');
+      self.prepend('<input class="form-control value-holder" type="text" disabled="disabled" placeholder="' + placeholder + '"><span class="glyphicon glyphicon-triangle-bottom"></span>');
+      var value_holder = self.find('.value-holder');
 
-    // INPUT PLACEHOLDER FIX FOR IE
-    if ($.fn.placeholder) {
-      self.find('input, textarea').placeholder();
-    }
-
-    // CREATE CLONE LIST
-    select.find('option').each(function() {
-      if ($(this).attr('value')) {
-        clone.append('<li data-value="' + $(this).val() + '">' + $(this).text() + '</li>');
-      }
-    });
-
-    // TOGGLE LIST
-    self.click(function(e) {;
-      e.stopPropagation();
-      self.toggleClass('active');
-    });
-
-    $(document).on('click', function() {
-      $('.select-box').removeClass('active');
-    });
-
-    // CLICK
-    clone.find('li').click(function() {
-
-      value_holder.val($(this).text());
-      select.find('option[value="' + $(this).attr('data-value') + '"]').attr('selected', 'selected');
-
-      // IF LIST OF LINKS
-      if (self.hasClass('links')) {
-        window.location.href = select.val();
+      // INPUT PLACEHOLDER FIX FOR IE
+      if ($.fn.placeholder) {
+        self.find('input, textarea').placeholder();
       }
 
-    });
-
-    // HIDE LIST
-    self.bind('clickoutside', function(event) {
-      clone.slideUp(100);
-      console.log('slide out');
-    });
-
-    // LIST OF LINKS
-    if (self.hasClass('links')) {
-      select.change(function() {
-        window.location.href = select.val();
+      // CREATE CLONE LIST
+      select.find('option').each(function() {
+        if ($(this).attr('value')) {
+          clone.append('<li data-value="' + $(this).val() + '">' + $(this).text() + '</li>');
+        }
       });
-    }
 
-  };
+      // TOGGLE LIST
+      self.click(function(e) {;
+        e.stopPropagation();
+        self.toggleClass('active');
+      });
 
-  // SELECT BOX
-  $('.select-box').each(function(){
-    $(this).uouSelectBox();
+      $(document).on('click', function() {
+        $('.select-box').removeClass('active');
+      });
+
+      // CLICK
+      clone.find('li').click(function() {
+
+        value_holder.val($(this).text());
+        select.find('option[value="' + $(this).attr('data-value') + '"]').attr('selected', 'selected');
+
+        // IF LIST OF LINKS
+        if (self.hasClass('links')) {
+          window.location.href = select.val();
+        }
+
+      });
+
+      // HIDE LIST
+      self.bind('clickoutside', function(event) {
+        clone.slideUp(100);
+        console.log('slide out');
+      });
+
+      // LIST OF LINKS
+      if (self.hasClass('links')) {
+        select.change(function() {
+          window.location.href = select.val();
+        });
+      }
+
+    };
+
+    // SELECT BOX
+    $('.select-box').each(function(){
+      $(this).uouSelectBox();
+    });
+
+    // Date picker init
+    $('.calendar').each(function() {
+      var
+        input = $(this).find('input'),
+        icon = $(this).find('.glyphicon');
+
+      input.datepicker();
+    });
+
+    // Owlcarousel init
+    $('#owl-banner').owlCarousel({
+      items:1,
+      autoplay: true,
+      smartSpeed:450,
+      nav: true,
+      navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
+    });
+
+    $('#owl-testimonials').owlCarousel({
+      items:1,
+      autoplay: true,
+      smartSpeed:450,
+    });
+
+    $('#owl-client-slider').owlCarousel({
+      margin:20,
+      autoplay: true,
+      smartSpeed:450,
+      responsive:{
+        0:{
+          items:2
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      }
+    });
   });
-
-  // Date picker init
-  $('.calendar').each(function() {
-    var
-      input = $(this).find('input'),
-      icon = $(this).find('.glyphicon');
-
-    input.datepicker();
-  });
-
-  // Owlcarousel init
-  $('#owl-banner').owlCarousel({
-    items:1,
-    autoplay: true,
-    smartSpeed:450,
-    nav: true,
-    navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
-  });
-
-  $('#owl-testimonials').owlCarousel({
-    items:1,
-    autoplay: true,
-    smartSpeed:450,
-  });
-});
 
 })(jQuery);
