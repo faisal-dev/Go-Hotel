@@ -1,7 +1,8 @@
 .navbar-main {
   background-color: $white;
-  box-shadow: 0 0 .3px 0 rgba($black, .3);
-  padding: 1rem 2rem;
+  box-shadow: 0px 0px 3px 0px rgba($black, .3);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-header {
@@ -14,7 +15,7 @@
   .text-logo {
     display: none;
 
-    @media (min-width: 1635px) {
+    @media (min-width: 768px) {
       display: inline;
       margin-left: 5rem;
     }

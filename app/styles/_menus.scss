@@ -1,5 +1,6 @@
 .menu-grp {
   margin-top: .5rem;
+  margin-right: 15px;
 }
 
 .menu-item {
@@ -12,13 +13,13 @@
   background-color: $white;
   box-shadow: 0 1px 2px 0 rgba($black, .2);
   position: absolute;
-  top: 5.7rem;
+  top: 5.6rem;
   z-index: 99;
 
   li > a {
     color: $menu-item;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
   }
 
   li:not(:last-child) {
@@ -28,7 +29,15 @@
 
 .menu-li-lg {
   li > a {
-    width: 205px;;
+    width: 22rem;
+
+    @media (min-width: 768px) {
+      width: 27rem;;
+    }
+
+    @media (min-width: 1200px) {
+      width: 21.5rem;;
+    }
   }
 }
 

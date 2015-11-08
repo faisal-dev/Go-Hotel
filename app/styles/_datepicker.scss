@@ -1,18 +1,51 @@
 // Custom datepicker style
 .ui-widget-content {
   border: 0;
-  box-shadow: 0 1px 2px 0 rgba($black, 0.2);
-  margin-top: 1.5rem;
+  box-shadow: 0 1px 2px 1px rgba($black, 0.2);
+  margin-top: 1.4rem;
   z-index: 9999 !important;
+
+  &:before,
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 0;
+    height: 0;
+  }
+
+  &:before {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 10px solid rgba($black, .08);
+  }
+
+  &:after {
+    border-top: 1px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+  }
 }
 
 .ui-datepicker-header {
-  background: darken($white, 5%);
+  background: $white;
   border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba($black, .1);
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 
   .ui-state-hover {
     background: rgba($white, 0);
     border: 0;
+  }
+
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    top: 9px;
   }
 
   .ui-datepicker-next-hover {
