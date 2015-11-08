@@ -10,7 +10,6 @@
 }
 
 .menu-item-extend {
-  background-color: $white;
   box-shadow: 0 1px 2px 0 rgba($black, .2);
   position: absolute;
   top: 5.6rem;
@@ -27,7 +26,13 @@
   }
 }
 
+.menu-li-lg,
+.menu-li-sm {
+  background-color: darken($white, 2%);
+}
+
 .menu-li-lg {
+
   li > a {
     width: 22rem;
 
@@ -42,6 +47,7 @@
 }
 
 .menu-li-sm {
+
   li > a {
     width: 50px;;
   }
