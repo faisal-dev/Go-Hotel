@@ -7,24 +7,23 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 
   $(document).ready(function() {
 
-    // // Menu item
+    // Menu item
     $('.menu-item').hover(function(e) {
       /* Stuff to do when the mouse enters the element */
+      if(window.innerWidth < 768) {
+        setTimeout(function() {
+          $(this).find('.menu-item-extend ').addClass('in');
+        }, 500);
+
+        return;
+      }
+
       $(this).find('.menu-item-extend ').addClass('in');
+
     }, function(e) {
       /* Stuff to do when the mouse leaves the element */
       $(this).find('.menu-item-extend ').removeClass('in');
     });
-
-    // $('.menu-item-extend').hover(function(e) {
-    //   /* Stuff to do when the mouse enters the element */
-    //   $(this).addClass('in');
-    // }, function(e) {
-    //   /* Stuff to do when the mouse leaves the element */
-    //   $(this).toggleClass('in');
-    // });
-
-
 
     /* -------------------------------------------------------------------------
       SELECT BOX
@@ -112,8 +111,15 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
       items:1,
       autoplay: true,
       smartSpeed:450,
-      nav: true,
       navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
+      responsive:{
+        0:{
+          nav: false,
+        },
+        768:{
+          nav: true,
+        }
+      }
     });
 
     $('#owl-testimonials').owlCarousel({
