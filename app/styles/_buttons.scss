@@ -1,11 +1,17 @@
 .btn {
   padding: 10px 18px;
   font-weight: 800;
+  transition: all .5s ease;
 }
 
 .btn-menu {
   background-color: $white;;
   border: 1px solid rgba($black, .2);
+
+  &:hover,
+  &:focus:active {
+    background-color: rgba($black, .08);
+  }
 }
 
 .btn-minimal {

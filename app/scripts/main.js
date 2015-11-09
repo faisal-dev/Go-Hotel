@@ -10,20 +10,20 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
     // Menu item
     $('.menu-item').hover(function(e) {
       /* Stuff to do when the mouse enters the element */
-      if(window.innerWidth < 768) {
+      if(window.innerWidth < 1200) {
         setTimeout(function() {
           $(this).find('.menu-item-extend ').addClass('in');
         }, 500);
-
-        return;
+      } else {
+        $(this).find('.menu-item-extend ').addClass('in');
       }
 
-      $(this).find('.menu-item-extend ').addClass('in');
-
-    }, function(e) {
-      /* Stuff to do when the mouse leaves the element */
-      $(this).find('.menu-item-extend ').removeClass('in');
-    });
+      }, function(e) {
+        /* Stuff to do when the mouse leaves the element */
+        if(window.innerWidth > 1200) {
+          $(this).find('.menu-item-extend ').removeClass('in');
+        }
+      });
 
     /* -------------------------------------------------------------------------
       SELECT BOX
@@ -96,6 +96,16 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
     $('.select-box').each(function(){
       $(this).uouSelectBox();
     });
+
+    if(window.innerWidth > 1200) {
+      $('.select-box').hover(function() {
+        /* Stuff to do when the mouse enters the element */
+        $(this).addClass('active');
+      }, function() {
+        /* Stuff to do when the mouse leaves the element */
+        $(this).removeClass('active');
+      });
+    }
 
     // Date picker init
     $('.calendar').each(function() {

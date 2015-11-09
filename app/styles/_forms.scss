@@ -1,7 +1,7 @@
 .form-group {
   position: relative;
   margin-bottom: 0;
-  width: 17%;
+  width: 16%;
 
   .form-control {
     width: 100%;
@@ -80,8 +80,6 @@
   }
 
   ul {
-    background-color: $white;
-    box-shadow: 0 1px 2px 0 rgba($black, .2);
     display: none;
     list-style: none;
     padding-left: 0;
@@ -92,17 +90,37 @@
   .active {
     ul {
       display: block;
-      margin-top: 1.6rem;
+      margin-top: -1rem;
+
+      @media (min-width: 1200px) {
+        margin-top: 0;
+      }
     }
   }
 
   li {
+    box-shadow: 0 1px 2px 0 rgba($black, .2);
+    background-color: $white;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     cursor: pointer;
+    color: rgba($black, .5);
 
     &:hover {
-      background-color: rgba($black, .05);
+      background-color: darken($white, 5%);
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 2rem;
+      border-bottom: 1px solid rgba($black, .1);
+
+      &:first-child {
+        margin-top: 1.4rem;
+      }
     }
   }
 }
