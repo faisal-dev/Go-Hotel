@@ -7,19 +7,22 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 
   $(document).ready(function() {
 
-    // Menu item
+    // // Menu item
     $('.menu-item').hover(function(e) {
       /* Stuff to do when the mouse enters the element */
       $(this).find('.menu-item-extend ').addClass('in');
-      console.log($(e.target).attr('class'));
-
     }, function(e) {
       /* Stuff to do when the mouse leaves the element */
-      if($(e.target).attr('class') === '.menu-item-extend') {
-        $(this).find('.menu-item-extend ').removeClass('in');
-      }
-      console.log($(e.target).attr('class'));
+      $(this).find('.menu-item-extend ').removeClass('in');
     });
+
+    // $('.menu-item-extend').hover(function(e) {
+    //   /* Stuff to do when the mouse enters the element */
+    //   $(this).addClass('in');
+    // }, function(e) {
+    //   /* Stuff to do when the mouse leaves the element */
+    //   $(this).toggleClass('in');
+    // });
 
 
 

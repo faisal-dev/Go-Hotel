@@ -16,6 +16,11 @@
 }
 
 .mobile-form {
+  background-color: $white;
+  box-shadow: 0 1px 2px 0 rgba($black, .2);
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+
   .form-control {
     width: 20rem;
     margin: 1rem;
