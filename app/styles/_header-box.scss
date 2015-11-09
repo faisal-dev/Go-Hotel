@@ -8,11 +8,19 @@
   }
 
   .title.-invert {
-  	color: $white;
+    color: $white;
   }
 
   >.meta {
     color: rgba($night, .4);
     font-weight: 500;
+  }
+
+  &.-invert > .title {
+    color: $white;
+  }
+
+  &.-invert > .meta {
+    color: rgba(212, 231, 245, .4);
   }
 }

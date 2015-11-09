@@ -1,44 +1,68 @@
 .supertabs-module {
-  border: 1px solid rgba($black, .1);
+  // border: 1px solid rgba($black, .1);
+  // border: 1px solid rgba($black, .1);
+
+  @media (min-width: 992px) {
+    height: 292px;
+    position: relative;
+  }
 
   >.menu {
-    @media(min-width: 768px) {
-      border-right: 1px solid rgba($black, .1);
+    @media(min-width: 992px) {
+      border-right: 1px solid rgba($white, .1);
     }
   }
 
   >.menu >.list {
     color: $black;
     display: block;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   >.menu > .list {
     padding: 2rem;
     cursor: pointer;
   }
+
+  >.display {
+    height: 100%;
+    padding-left: 3rem;
+  }
 }
 
 .supertabs-module >.menu >.list {
+  // background-color: rgba($primary, .1);
+  border-bottom: 1px solid rgba($white, .1);
+
+  @media (min-width: 992px) {
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
 
   &.active {
-    background-color: rgba($grey, .1);
+    // background-color: lighten($primary, 5%);
+  }
+
+  &.active > .title {
+    color: rgba(191, 234, 255, 0.6);
+  }
+
+  &.active > .meta {
+    color: $white;
   }
 
   &:hover {
     text-decoration: none;
   }
 
-  &:not(:last-child) {
-    border-bottom: 1px solid rgba($grey, .1);
-  }
-
   >.title {
     margin-top: 0;
+    color: rgba(59, 93, 117, 0.78);
   }
 
   >.meta {
-    color: $grey;
+    color: rgba(199, 221, 255, 0.17);
   }
 }

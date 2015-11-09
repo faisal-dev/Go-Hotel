@@ -11,3 +11,9 @@ h6,
 button {
   font-family: 'Open sans', 'Helvetica', sans-serif;
 }
+
+blockquote {
+  footer {
+    color: rgba($white, .6);
+  }
+}
