@@ -4,10 +4,15 @@
   >.title {
     font-weight: 800;
     margin-top: 0;
+    color: $primary;
+  }
+
+  .title.-invert {
+  	color: $white;
   }
 
   >.meta {
-    color: $grey;
+    color: rgba($night, .4);
     font-weight: 500;
   }
 }

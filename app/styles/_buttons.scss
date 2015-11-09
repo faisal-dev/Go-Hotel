@@ -4,9 +4,22 @@
   transition: all .5s ease;
 }
 
+.btn-brand {
+  background-color: $primary;
+  color: rgba($white, .8);
+
+  &:hover,
+  &:focus:active,
+  &:focus {
+    background-color: lighten($primary, 5%);
+    color: $white;
+  }
+}
+
 .btn-menu {
-  background-color: $white;;
+  background-color: $white;
   border: 1px solid rgba($black, .2);
+  color: rgba($black, .4);
 
   &:hover,
   &:focus:active {
