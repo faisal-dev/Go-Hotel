@@ -142,7 +142,6 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
       margin:40,
       autoplay: true,
       smartSpeed:450,
-      loop: true,
       responsive:{
         0:{
           items:2
