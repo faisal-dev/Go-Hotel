@@ -27,9 +27,12 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map_canvas { height: 100%; }
+    </style>
   </head>
-  <body class="go-theme" >
+  <body class="go-theme" onload="initMap()">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -232,7 +235,9 @@
         </div>
       </div> <!-- /.cover-header -->
 
-
+      <div class="map">
+        <div id="map_canvas"></div>
+      </div>
 
       <section class="partner block-container -main">
         <div class="header bd-underline -lg -star container">
@@ -356,6 +361,20 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <!-- Google map -->
+    <!-- as of maps V3, api key is not required if you add sensor=false -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false" async defer></script>
+
+    <script type="text/javascript">
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map_canvas'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8,
+          scrollwheel: false
+        });
+      }
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
