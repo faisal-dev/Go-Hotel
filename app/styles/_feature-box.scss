@@ -2,22 +2,29 @@
   margin-bottom: 2rem;
   position: relative;
 
-  >.title {
+  > .title {
     padding-bottom: 2rem;
     margin: 0;
     font-weight: 800;
   }
 
-  >.detail {
+  > .detail {
     color: $grey;
     margin: 0;
   }
 
-  >.image {
+  > .image {
     margin-bottom: 2rem;
   }
 
-  >.overlay {
+  > .socials-tag {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  > .overlay {
     display: block;
     content: '';
     position: absolute;

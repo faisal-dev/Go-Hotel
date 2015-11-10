@@ -27,12 +27,9 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map_canvas { height: 100%; }
-    </style>
+    
   </head>
-  <body class="go-theme" onload="initMap()">
+  <body class="go-theme" >
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -161,7 +158,7 @@
                 </button>
                 <div class="menu-item-extend menu-r collapse" id="page-lists">
                   <ul class="nav menu-li-lg">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="../rooms.html">Rooms</a></li>
                     <li><a href="../staff.html">Our staff</a></li>
                     <li><a href="../locations.html">Locations</a></li>
@@ -223,109 +220,169 @@
         </div>
       </nav> <!-- /.navbar-main-menu -->
 
-      <div class="cover-header -location">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-          <div class="col-xs-12">
-            <ul class="breadcrumb">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="staff.html">Locations</a></li>
-            </ul>
+      <section class="testimonials block-container -main -invert _mg-t-sm">
+        <div class="overlay"></div> <!-- /.overlay -->
+        <div class="homepage-hero-module">
+          <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+              <source src="images/Mp4/Big-City-Life.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="images/Webm/Big-City-Life.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+              <img src="images/Big-City-Life.jpg" alt="" width="100%">
+            </div>
+          </div>
+        </div> <!-- /.homepage-hero-module -->
+
+        <div class="header bd-underline -lg -star container">
+          <div class="row">
+            <div class="header-box col-xs-12">
+              <h1 class="title -invert">TESTIMONIALS</h1>
+            </div>
           </div>
         </div>
-      </div> <!-- /.cover-header -->
+        <div class="content text-center container">
+          <div class="owl-carousel" id="owl-testimonials">
+            <div class="col-xs-12">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere explicabo nisi molestias totam tempora.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+            <div class="col-xs-12">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque beatae ullam doloremque! Minus odit delectus, totam facere! Quae aliquid, sequi?</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+            <div class="col-xs-12">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ratione earum maiores quaerat, magnam tempora repudiandae doloribus. Autem voluptatem ad nisi perspiciatis incidunt expedita ab voluptatibus quae quam, vitae quasi.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div> <!-- /#owl-testimonials -->
+        </div>
+      </section> <!-- /.testimonials -->
 
-      <div class="map">
-        <div id="map_canvas"></div>
-      </div> <!-- /.map -->
-
-      <section class="office block-container -main">
-        <div class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <h3 class="title">SWITZERLAND OFFICE</h3>
-                <h4 class="meta">OFFICE</h4>
-                <hr>
-              </div>
-              <div class="col-sm-6 pull-right">
-                <div class="location-thumb">
-                  <img src="../images/location-1.jpg" alt="" width="100%">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <address>
-                      <p>PO Box 16122 Collins Street West</p>
-                      <p>Victoria 8007 Australia</p>
-                      <p>Envato Headquarters</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>Phone 1: +61 3 8376 6284</p>
-                      <p>Phone 2: +61 3 8376 6284</p>
-                      <p>Fax 1: +61 3 8376 6284</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>121 King Street, Melbourne</p>
-                      <p>Victoria 8007 Australia</p>
-                      <p>Envato Pty Ltd</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>Email 1: roman.ul.ferdosh@gmail.com</p>
-                      <p>Website 1: www.example.com</p>
-                    </address>
+      <section class="team block-container -main">
+        <div class="header bd-underline -lg -star container">
+          <div class="row">
+            <div class="header-box col-xs-12">
+              <h1 class="title">OUR TEAM</h1>
+              <p class="meta col-md-8 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eligendi beatae natus labore harum error suscipit adipisci voluptatum quidem fugiat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content container text-center">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-box">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/team-1.jpg" width="100%" alt="ad-1">
+                    <div class="socials-tag">
+                      <ul class="custom-lists -horizon">
+                        <li class="item">
+                          <a href="#"><span class="icon icon-fb-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-ig-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-youtube-w icon-sm"></span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
+                <h1 class="title h4">CHARLES SMOKE</h1>
+                <p class="meta">Customer Care</p>
+                <p class="detail">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <h3 class="title">SWITZERLAND OFFICE</h3>
-                <h4 class="meta">OFFICE</h4>
-                <hr>
-              </div>
-              <div class="col-sm-6 pull-right">
-                <div class="location-thumb">
-                  <img src="../images/location-2.jpg" alt="" width="100%">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <address>
-                      <p>PO Box 16122 Collins Street West</p>
-                      <p>Victoria 8007 Australia</p>
-                      <p>Envato Headquarters</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>Phone 1: +61 3 8376 6284</p>
-                      <p>Phone 2: +61 3 8376 6284</p>
-                      <p>Fax 1: +61 3 8376 6284</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>121 King Street, Melbourne</p>
-                      <p>Victoria 8007 Australia</p>
-                      <p>Envato Pty Ltd</p>
-                    </address>
-                  </div>
-                  <div class="col-sm-6">
-                    <address>
-                      <p>Email 1: roman.ul.ferdosh@gmail.com</p>
-                      <p>Website 1: www.example.com</p>
-                    </address>
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-box">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/team-2.jpg" width="100%" alt="ad-2">
+                    <div class="socials-tag">
+                      <ul class="custom-lists -horizon">
+                        <li class="item">
+                          <a href="#"><span class="icon icon-fb-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-ig-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-youtube-w icon-sm"></span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
+                <h1 class="title h4">CHARLES SMOKE</h1>
+                <p class="meta">Customer Care</p>
+                <p class="detail">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-box">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/team-3.jpg" width="100%" alt="ad-3">
+                    <div class="socials-tag">
+                      <ul class="custom-lists -horizon">
+                        <li class="item">
+                          <a href="#"><span class="icon icon-fb-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-ig-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-youtube-w icon-sm"></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="title h4">CHARLES SMOKE</h1>
+                <p class="meta">Customer Care</p>
+                <p class="detail">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-box">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/team-4.jpg" width="100%" alt="ad-4">
+                    <div class="socials-tag">
+                      <ul class="custom-lists -horizon">
+                        <li class="item">
+                          <a href="#"><span class="icon icon-fb-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-ig-w icon-sm"></span></a>
+                        </li>
+                        <li class="item">
+                          <a href="#"><span class="icon icon-youtube-w icon-sm"></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="title h4">CHARLES SMOKE</h1>
+                <p class="meta">Customer Care</p>
+                <p class="detail">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                </p>
               </div>
             </div>
           </div>
@@ -454,20 +511,6 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-
-    <!-- Google map -->
-    <!-- as of maps V3, api key is not required if you add sensor=false -->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false" async defer></script>
-
-    <script type="text/javascript">
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map_canvas'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8,
-          scrollwheel: false
-        });
-      }
-    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

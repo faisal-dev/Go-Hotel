@@ -1,6 +1,14 @@
 .thumb-img {
   position: relative;
 
+  > .socials-tag {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: rgba($primary, .8);
+    padding-top: 1.5rem;
+  }
+
   >.overlay {
     background-color: rgba($overlay-bg, .8);
     display: block;
