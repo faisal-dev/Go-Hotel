@@ -9,8 +9,16 @@
     transition: all .5s ease;
   }
 
+  > .input:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
   > .input:focus,
   > .input:active {
     opacity: 1;
+  }
+
+  > .title {
+    margin-top: 3rem;
   }
 }

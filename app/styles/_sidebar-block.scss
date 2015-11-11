@@ -1,10 +1,9 @@
 .sidebar-block {
-  > .title,
-  > .content {
+  > .block {
     padding: 2rem 2rem;
   }
 
-  > .title {
-    border-bottom: 1px solid rgba($black, .1);
+  > .block.-bd {
+    border-top: 1px solid rgba($black, .1);
   }
 }
