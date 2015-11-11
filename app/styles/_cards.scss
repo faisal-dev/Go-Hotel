@@ -60,4 +60,12 @@
       padding: .8rem 0;
     }
   }
+
+  &.-sm > .avatar {
+    width: 20%;
+  }
+
+  &.-sm > .content {
+    width: 80%;
+  }
 }
