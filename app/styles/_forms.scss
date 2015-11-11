@@ -13,6 +13,11 @@
     right: 12px;
     top: 15px;
   }
+
+  &.-widget {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .mobile-form {

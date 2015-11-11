@@ -9,6 +9,7 @@
 
   > .item a {
     text-decoration: none;
+    color: rgba($black, .5);
   }
 
   > .item.-line-break:not(:first-child) {
