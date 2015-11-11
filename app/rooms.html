@@ -1,0 +1,560 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Go Hotel | Best quality services</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    
+  </head>
+  <body class="go-theme" >
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- TODOS
+
+      Ref - http://188.226.241.135/hotelpetra/homepage_v3/news.html#
+
+      0.Nav
+      1. Home
+      2. Rooms
+      3. Our staff
+      4. Locations
+      5. About us
+      6. Testimonials
+      7. News
+      8. Contacts
+     -->
+
+     <div id="main-wrapper">
+      <nav class="navbar navbar-main navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <span class="icon icon-brand icon-md"></span>
+                <h1 class="text-logo">GO HOTEL</h1>
+              </a>
+            </div> <!--  /.navbar-brand -->
+
+            <div class="menu-grp pull-right">
+              <div class="menu-item hidden-lg" id="menu-booking">
+                <button class="btn btn-menu" type="button" data-toggle="collapse" data-target="#mobile-form" aria-expanded="false" aria-controls="mobile-form">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </button>
+                <div class="menu-item-extend booking-form collapse" id="mobile-form">
+                  <form class="mobile-form">
+                    <div class="form-group">
+                      <label class="sr-only" for="#m-search-box">Search</label>
+                      <input class="form-control" id="m-search-box" type="text" placeholder="Find here">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </div>
+
+                    <div class="form-group calendar">
+                      <label class="sr-only" for="#m-arrival-sm">arrival</label>
+                      <input class="form-control" id="m-arrival-sm" type="text" placeholder="Arrival">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </div>
+
+                    <div class="form-group calendar">
+                      <label class="sr-only" for="#m-departure-sm">departure</label>
+                      <input class="form-control" id="m-departure-sm" type="text" placeholder="Departure">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </div>
+
+                    <div class="form-group select-box">
+                      <label class="sr-only" for="#adults">adults</label>
+                      <select name="adults" data-placeholder="Adults">
+                        <option>Adults</option>
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group select-box">
+                      <label class="sr-only" for="#children">children</label>
+                      <select name="children" data-placeholder="Children">
+                        <option>Children</option>
+                        <option value="1">1 children</option>
+                        <option value="2">2 childrens</option>
+                        <option value="3">3 childrens</option>
+                        <option value="4">4 childrens</option>
+                      </select>
+                    </div>
+
+                    <button class="btn btn-brand">BOOKING</button>
+                  </form>
+                </div>
+              </div> <!--  /#menu-booking -->
+
+              <div class="menu-item" id="menu-socials">
+                <button class="btn btn-menu" type="button" data-toggle="collapse" data-target="#socials-lists" aria-expanded="false" aria-controls="socials-lists">
+                  <span class="glyphicon glyphicon-retweet"></span>
+                </button>
+                <div class="menu-item-extend collapse" id="socials-lists">
+                  <ul class="nav menu-li-sm">
+                    <li class="active">
+                      <a href="#">
+                        <span class="icon icon-fb icon-sm"></span>
+                        <span class="sr-only">Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-ig icon-sm"></span>
+                        <span class="sr-only">Instargram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-youtube icon-sm"></span>
+                        <span class="sr-only">Youtube</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div> <!-- /#menu-socials -->
+
+              <div class="menu-item" id="menu-login">
+                <button class="btn btn-menu" type="button">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                </button>
+                <div class="menu-item-extend">
+                  <form action="index.html">
+
+                  </form>
+                </div>
+              </div> <!-- /#menu-login-form -->
+
+              <div class="menu-item" id="menu-main">
+                <button class="btn btn-menu" type="button" data-toggle="collapse" data-target="#page-lists" aria-expanded="false" aria-controls="page-lists">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="glyphicon glyphicon-menu-hamburger"></span>
+                  <span class="hidden-xs">MENU</span>
+                </button>
+                <div class="menu-item-extend menu-r collapse" id="page-lists">
+                  <ul class="nav menu-li-lg">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="../rooms.html">Rooms</a></li>
+                    <li><a href="../staff.html">Our staff</a></li>
+                    <li><a href="../locations.html">Locations</a></li>
+                    <li><a href="../about.html">About us</a></li>
+                    <li><a href="../testimonials.html">Testimonials</a></li>
+                    <li><a href="../news.html">News</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div> <!--/#menu-main-->
+            </div> <!-- /.menu-grp -->
+
+            <div class="booking-form col-lg-8 visible-lg pull-right">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="sr-only" for="#search-box">Search</label>
+                  <input class="form-control" id="search-box" type="text" placeholder="Find here">
+                  <span class="glyphicon glyphicon-search"></span>
+                </div>
+
+                <div class="form-group calendar">
+                  <label class="sr-only" for="#arrival-lg">arrival</label>
+                  <input class="form-control" id="arrival-lg" type="text" placeholder="Arrival">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+
+                <div class="form-group calendar">
+                  <label class="sr-only" for="#departure-lg">departure</label>
+                  <input class="form-control" id="departure-lg" type="text" placeholder="Departure">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+
+                <div class="form-group select-box">
+                  <label class="sr-only" for="#adults">adults</label>
+                  <select name="adults" data-placeholder="Adults">
+                    <option>Adults</option>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                  </select>
+                </div>
+
+                <div class="form-group select-box">
+                  <label class="sr-only" for="#children">children</label>
+                  <select name="children" data-placeholder="Children">
+                    <option>Children</option>
+                    <option value="1">1 children</option>
+                    <option value="2">2 childrens</option>
+                    <option value="3">3 childrens</option>
+                    <option value="4">4 childrens</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-brand">BOOKING</button>
+              </form>
+            </div> <!-- /.booking-form -->
+          </div>
+        </div>
+      </nav> <!-- /.navbar-main-menu -->
+
+      <div class="cover-header -staff">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+          <div class="col-xs-12">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- /.cover-header -->
+
+      <section class="news block-container -main" style="background-color: #f7f6f6;">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="card -verticle">
+                <aside class="sidebar-block">
+                  <div class="title">
+                    <h4>
+                      <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                      Filters
+                    </h4>
+                  </div>
+
+                  <div class="content">
+                    <form class="form-box">
+                      <input class="form-control input" type="text" placeholder="Search">
+                      <h4>General</h4>
+                      <input class="form-control input" type="text" placeholder="Arrive">
+                      <input class="form-control input" type="text" placeholder="Arrive">
+                      <input class="form-control input" type="text" placeholder="Arrive">
+                      <input class="form-control input" type="text" placeholder="Arrive">
+
+                      <h4>Price</h4>
+                      <input class="form-control input" type="text" placeholder="Arrive">
+
+                      <h4>AMENITIES</h4>
+                      <input class="form-control input" type="text" placeholder="Arrive">
+
+                      <hr>
+                      <div class="btn-group btn-center">
+                        <button class="btn btn-default">FILTER</button>
+                        <button class="btn btn-default">RESET</button>
+                      </div>
+                    </form>
+
+                  <div class="content">
+                    
+                  </div>
+                </aside>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="feature-box card -verticle">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/news-1.jpg" width="100%" alt="news-1">
+                  </div>
+                </div>
+                <div class="content">
+                  <h1 class="title h4">CHARLES SMOKE</h1>
+                  <p class="date">12 JUNE 2015</p>
+                  <hr>
+                  <ul class="custom-lists -horizon">
+                    <li class="item">
+                      <span class="glyphicon glyphicon-tag"></span>
+                      <a class="tag" href="#">
+                        Thailand
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Event
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Phuket
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-user"></span>
+                      <a href="#">
+                        Admin
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-time"></span>
+                      <a href="#">
+                        7
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="meta">Customer Care</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                  </p>
+                  <a href="#" class="btn btn-default">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="feature-box card -verticle">
+                <div class="image">
+                  <div class="thumb-img">
+                    <img class="img" src="images/news-3.jpg" width="100%" alt="news-3">
+                  </div>
+                </div>
+                <div class="content">
+                  <h1 class="title h4">CHARLES SMOKE</h1>
+                  <p class="date">12 JUNE 2015</p>
+                  <hr>
+                  <ul class="custom-lists -horizon">
+                    <li class="item">
+                      <span class="glyphicon glyphicon-tag"></span>
+                      <a class="tag" href="#">
+                        Thailand
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Event
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Phuket
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-user"></span>
+                      <a href="#">
+                        Admin
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-time"></span>
+                      <a href="#">
+                        7
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="meta">Customer Care</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                  </p>
+                  <a href="#" class="btn btn-default">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="feature-box card -verticle">
+                <div class="content">
+                  <h1 class="title h4">CHARLES SMOKE</h1>
+                  <p class="date">12 JUNE 2015</p>
+                  <hr>
+                  <ul class="custom-lists -horizon">
+                    <li class="item">
+                      <span class="glyphicon glyphicon-tag"></span>
+                      <a class="tag" href="#">
+                        Thailand
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Event
+                      </a>
+                      /
+                      <a class="tag" href="#">
+                        Phuket
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-user"></span>
+                      <a href="#">
+                        Admin
+                      </a>
+                    </li>
+                    <li class="item">
+                      <span class="glyphicon glyphicon-time"></span>
+                      <a href="#">
+                        7
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="meta">Customer Care</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere vero officiis, minima eligendi consequatur?
+                  </p>
+                  <a href="#" class="btn btn-default">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="pagination-block card text-center">
+                <ul class="custom-lists -horizon">
+                  <li class="item"><a href="#">PREV</a></li>
+                  <li class="item"><a href="#">1</a></li>
+                  <li class="item"><a href="#">2</a></li>
+                  <li class="item"><a href="#">3</a></li>
+                  <li class="item"><a href="#">4</a></li>
+                  <li class="item"><a href="#">NEXT</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> <!-- staff-->
+
+      <section class="partner block-container -main">
+        <div class="header bd-underline -lg -star container">
+          <div class="row">
+            <div class="header-box col-xs-12">
+              <h1 class="title">OUR PARTNERS</h1>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container">
+            <div class="owl-carousel" id="owl-client-slider">
+              <div>
+                <img src="images/client-1.png" alt="cient-1">
+              </div>
+              <div>
+                <img src="images/client-2.png" alt="cient-2">
+              </div>
+              <div>
+                <img src="images/client-3.png" alt="cient-3">
+              </div>
+              <div>
+                <img src="images/client-4.png" alt="cient-4">
+              </div>
+              <div>
+                <img src="images/client-5.png" alt="cient-5">
+              </div>
+              <div>
+                <img src="images/client-6.jpg" alt="cient-6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- /.partner -->
+
+      <footer class="footer block-container -main">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="footer-meta row">
+            <div class="col-xs-12 text-center">
+              <div class="brand-logo">
+                <img class="logo" src="images/brand-logo.png" width="100px" alt="logo">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box -invert">
+                <h4 class="title">About us</h4>
+                <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quis dolores fugit voluptate. Eaque animi impedit esse asperiores similique quaerat provident aut, iusto consectetur dignissimos! Perferendis porro at, impedit odit!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box -invert">
+                <h4 class="title">Lastest news</h4>
+                <ul class="custom-lists -invert">
+                  <li class="item -line-break"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+                  <li class="item -line-break"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li class="item -line-break"><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                  <li class="item -line-break"><a href="#">Lorem ipsum dolor sit.</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box -invert">
+                <h4 class="title">Newsletter</h4>
+                <form class="form-box">
+                  <input class="input" type="email" placeholder="E-mail">
+                  <button class="btn btn-menu">Sign in</button>
+                </form>
+
+                <h4 class="title _mg-sm-top">Stay in touch</h4>
+                <ul class="custom-lists -horizon -invert">
+                  <li class="item">
+                    <a href="#"><span class="icon icon-fb-w icon-md"></span></a>
+                  </li>
+                  <li class="item">
+                    <a href="#"><span class="icon icon-ig-w icon-md"></span></a>
+                  </li>
+                  <li class="item">
+                    <a href="#"><span class="icon icon-youtube-w icon-md"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- /.footermeta -->
+
+          <div class="footer-coppyright text-center _mg-top-md">
+            <small>Copyright 2015 © PetraHotel. All rights reserved. Powered by Yeoman</small>
+          </div>
+        </div>
+      </footer> <!-- /.footer -->
+
+     </div> <!-- /#main-wrapper -->
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-ui-datepicker-smooth/jquery-ui.min.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/scripts/coverr.js"></script>
+    <!-- endbuild -->
+    
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
