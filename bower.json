@@ -5,7 +5,8 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
     "jquery-ui-datepicker-smooth": "~1.1.0",
-    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3"
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
+    "nouislider": "~8.1.0"
   },
   "overrides": {
     "bootstrap-sass": {
