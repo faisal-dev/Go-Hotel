@@ -241,13 +241,13 @@
               <div class="card -verticle">
                 <aside class="sidebar-block">
                   <div class="block">
-                    <h4>
+                    <h4 type="button" data-toggle="collapse" data-target="#sidebar-filter" aria-expanded="false" aria-controls="sidebar-filter">
                       <span class="glyphicon glyphicon-chevron-down pull-right"></span>
                       Filters
                     </h4>
                   </div>
 
-                  <div class="block -bd booking-form">
+                  <div class="block -bd booking-form" id="sidebar-filter">
                     <form class="form-box">
                       <div class="form-group -widget">
                         <input class="form-control input" type="text" placeholder="Search">
@@ -287,23 +287,114 @@
                       <h4 class="title">Price</h4>
                       <div id="slider-snap"></div>
                       <div class="display-block">
-                        <div class="display" id="slider-snap-value-lower"></div>
-                        <div class="display pull-right" id="slider-snap-value-upper"></div>
+                        <div class="display" id="slider-snap-value-lower">$</div>
+                        <div class="display pull-right" id="slider-snap-value-upper">$</div>
                       </div>
 
                       <h4 class="title">AMENITIES</h4>
-                      <input class="form-control input" type="text" placeholder="Arrive">
+                      <ul class="custom-lists additional-filter-list clearfix">
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-ac" checked="checked" type="checkbox">
+                            <label for="additional-filter-ac">AC</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-hotbath" checked="checked" type="checkbox">
+                            <label for="additional-filter-hotbath">Hotbath</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-parking" type="checkbox">
+                            <label for="additional-filter-parking">Parking</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-room-service" type="checkbox">
+                            <label for="additional-filter-room-service">Room Service</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-safe" checked="checked" type="checkbox">
+                            <label for="additional-filter-safe">Safe</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input">
+                            <input id="additional-filter-tv" checked="checked" type="checkbox">
+                            <label for="additional-filter-tv">TV</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="checkbox-input active">
+                            <input id="additional-filter-wifi" checked="checked" type="checkbox">
+                            <label for="additional-filter-wifi">Wifi</label>
+                          </span>
+                        </li>
+                      </ul>
 
                       <hr>
-                      <div class="btn-group -bd">
-                        <button class="btn btn-default">FILTER</button>
-                        <button class="btn btn-default">RESET</button>
+                      <div class="row text-center">
+                        <div class="btn-group -bd">
+                          <button class="btn btn-default">FILTER</button>
+                          <button class="btn btn-default">RESET</button>
+                        </div>
                       </div>
                     </form>
                   </div>
                 </aside>
               </div>
+
+              <div class="card -verticle">
+                <aside class="sidebar-block">
+                  <div class="block">
+                    <h4>
+                      SPECIAL OFFERS
+                    </h4>
+                    <div class="block -bd">
+                      <div class="card -md">
+                        <div class="avatar pull-left">
+                          <img src="../images/room-1.jpg" width="100%" alt="room-1">
+                        </div>
+                        <div class="content pull-left">
+                          <div class="title">
+                            <h4>KING SUITE</h4>
+                            <p>from $99/day</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card -md">
+                        <div class="avatar pull-left">
+                          <img src="../images/room-2.jpg" width="100%" alt="room-2">
+                        </div>
+                        <div class="content pull-left">
+                          <div class="title">
+                            <h4>KING SUITE</h4>
+                            <p>from $99/day</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card -md">
+                        <div class="avatar pull-left">
+                          <img src="../images/room-3.jpg" width="100%" alt="room-3">
+                        </div>
+                        <div class="content pull-left">
+                          <div class="title">
+                            <h4>KING SUITE</h4>
+                            <p>from $99/day</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
             </div>
+
             <div class="col-md-8">
               <div class="feature-box card -verticle">
                 <div class="image">

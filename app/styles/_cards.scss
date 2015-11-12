@@ -72,4 +72,14 @@
   &.-verticle > .content {
     width: 100%;
   }
+
+  &.-md > .avatar {
+    width: 30%;
+  }
+
+  &.-md > .content {
+    width: 70%;
+    padding: 0;
+    padding-left: 2rem;
+  }
 }

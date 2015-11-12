@@ -72,6 +72,30 @@
     }
   }
 
+  .custom-lists {
+    display: block;
+    position: relative;
+  }
+
+  .checkbox-input > input {
+    height: auto !important;
+    margin-right: 2rem;
+  }
+
+  .custom-lists > li > span {
+    cursor: pointer;
+  }
+
+  .custom-lists > li {
+    border: 0 !important;
+    box-shadow: none !important;
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
   .select-box {
     position: relative;
 
