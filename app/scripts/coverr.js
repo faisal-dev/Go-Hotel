@@ -1,6 +1,8 @@
 //jQuery is required to run this code
 $( document ).ready(function() {
 
+    console.log('test test');
+
     scaleVideoContainer();
 
     initBannerVideoSize('.video-container .poster img');
