@@ -158,29 +158,31 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
     // Range slider
     var snapSlider = document.getElementById('slider-snap');
 
-    noUiSlider.create(snapSlider, {
-      start: [ 0, 500 ],
-      snap: true,
-      connect: true,
-      range: {
-        'min': 0,
-        '10%': 50,
-        '20%': 100,
-        '30%': 150,
-        '40%': 500,
-        '50%': 800,
-        'max': 1000
-      }
-    });
+    if(snapSlider !== null) {
+      noUiSlider.create(snapSlider, {
+        start: [ 0, 500 ],
+        snap: true,
+        connect: true,
+        range: {
+          'min': 0,
+          '10%': 50,
+          '20%': 100,
+          '30%': 150,
+          '40%': 500,
+          '50%': 800,
+          'max': 1000
+        }
+      });
 
-    var snapValues = [
-      document.getElementById('slider-snap-value-lower'),
-      document.getElementById('slider-snap-value-upper')
-    ];
+      var snapValues = [
+        document.getElementById('slider-snap-value-lower'),
+        document.getElementById('slider-snap-value-upper')
+      ];
 
-    snapSlider.noUiSlider.on('update', function( values, handle ) {
-      snapValues[handle].innerHTML = values[handle];
-    });
+      snapSlider.noUiSlider.on('update', function( values, handle ) {
+        snapValues[handle].innerHTML = values[handle];
+      });
+    }
   });
 
 })(jQuery);
